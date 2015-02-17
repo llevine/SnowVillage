@@ -1,29 +1,40 @@
 Rails.application.routes.draw do
-  get 'snowflakes/index'
+  root 'home#index'
 
-  get 'snowflakes/show'
+  get 'home/index' => 'home#index', as: 'splash'
 
-  get 'snowflakes/create'
 
-  get 'snowflakes/destroy'
+  resources :users
 
-  get 'town/index'
+  resources :snowflakes
 
-  get 'town/show'
+  resources :town
 
-  get 'town/create'
+  # get 'snowflakes/index'
 
-  get 'town/update'
+  # get 'snowflakes/show'
 
-  get 'town/destroy'
+  # get 'snowflakes/create'
 
-  get 'users/show'
+  # get 'snowflakes/destroy'
 
-  get 'users/create'
+  # get 'town/index'
 
-  get 'users/update'
+  # get 'town/show'
 
-  get 'users/destroy'
+  # get 'town/create'
+
+  # get 'town/update'
+
+  # get 'town/destroy'
+
+  # get 'users/show'
+
+  # get 'users/create'
+
+  # get 'users/update'
+
+  # get 'users/destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
