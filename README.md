@@ -4,5 +4,4 @@ A place for people to cut out digital snowflakes, add them to their village, and
 ### ERD
 ![image](http://i.imgur.com/nnMVlQo.png)
 
-
 Date: 2015-02-16
